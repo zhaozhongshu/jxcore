@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx">
+      <UniqueIdentifier>{C7926745-12CF-E299-6415-AF838340B429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\jx\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\external">
+      <UniqueIdentifier>{323CF671-16D1-0362-1BD3-4E39441797F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\external\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_excluded_files">
+      <UniqueIdentifier>{158E591E-B6EA-0C85-8F5A-18EAFA09B4CE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jx.gyp"/>
+    <None Include="lib\jx\_jx_argv.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_subs.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_memStore.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_tasks.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_utils.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_install.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_multiplier.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_monitor.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_monitorHelper.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_loadEmbedded.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_http_helper.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_config.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_incoming.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_package.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_parsers.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_timers.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_source.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="lib\jx\_jx_marker.js">
+      <Filter>lib\jx\_excluded_files</Filter>
+    </None>
+    <None Include="src\node.js">
+      <Filter>src\_excluded_files</Filter>
+    </None>
+    <None Include="lib\_debugger.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\_linklist.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\assert.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\buffer.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\child_process.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\console.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\constants.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\crypto.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\cluster.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\dgram.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\dns.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\domain.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\events.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\freelist.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\fs.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\http.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\https.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\module.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\net.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\os.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\path.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\punycode.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\querystring.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\readline.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\repl.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\stream.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\_stream_readable.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\_stream_writable.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\_stream_duplex.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\_stream_transform.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\_stream_passthrough.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\string_decoder.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\sys.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\timers.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\tls.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\tty.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\url.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\util.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\vm.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\zlib.js">
+      <Filter>lib\_excluded_files</Filter>
+    </None>
+    <None Include="lib\external\sqlite3.js">
+      <Filter>lib\external\_excluded_files</Filter>
+    </None>
+    <None Include="src\macros.py">
+      <Filter>src\_excluded_files</Filter>
+    </None>
+    <None Include="config.gypi">
+      <Filter>_excluded_files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

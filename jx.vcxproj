@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0C67D40C-7E3A-A5EB-2BB1-C2713A679FE1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>jx</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\.\bin\;$(MSBuildProjectDirectory)\.\bin\</ExecutablePath>
+    <IntDir>$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>src;src\wrappers;tools\msvs\genfiles;deps\uv\src\ares;$(OutDir)obj\global_intermediate;deps\openssl\openssl\include;deps\v8\include;deps\sqlite;.;deps\zlib;deps\http_parser;deps\cares\include;deps\uv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4355;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;NODE_WANT_INTERNALS=1;ARCH="ia32";PLATFORM="win";HAVE_OPENSSL=1;JS_ENGINE_V8=1;V8_IS_3_14=1;HAVE_PERFCTR=1;JXCORE_EMBEDS_SQLITE;FD_SETSIZE=1024;PLATFORM="win32";_UNICODE=1;DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gdi32.lib;user32.lib;winmm.lib;advapi32.lib;iphlpapi.lib;psapi.lib;shell32.lib;ws2_32.lib</AdditionalDependencies>
+      <AllowIsolation>true</AllowIsolation>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>src;src\wrappers;tools\msvs\genfiles;deps\uv\src\ares;$(OutDir)obj\global_intermediate;deps\openssl\openssl\include;deps\v8\include;deps\sqlite;.;deps\zlib;deps\http_parser;deps\cares\include;deps\uv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;NODE_WANT_INTERNALS=1;ARCH="ia32";PLATFORM="win";HAVE_OPENSSL=1;JS_ENGINE_V8=1;V8_IS_3_14=1;HAVE_PERFCTR=1;JXCORE_EMBEDS_SQLITE;FD_SETSIZE=1024;PLATFORM="win32";_UNICODE=1;DEBUG;_DEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>src;src\wrappers;tools\msvs\genfiles;deps\uv\src\ares;$(OutDir)obj\global_intermediate;deps\openssl\openssl\include;deps\v8\include;deps\sqlite;.;deps\zlib;deps\http_parser;deps\cares\include;deps\uv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4355;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;NODE_WANT_INTERNALS=1;ARCH="ia32";PLATFORM="win";HAVE_OPENSSL=0;JS_ENGINE_V8=1;V8_IS_3_14=1;HAVE_PERFCTR=0;FD_SETSIZE=1024;PLATFORM="win32";_UNICODE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>gdi32.lib;user32.lib;winmm.lib;advapi32.lib;iphlpapi.lib;psapi.lib;shell32.lib;ws2_32.lib</AdditionalDependencies>
+      <AllowIsolation>true</AllowIsolation>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>openssl.lib;sqlite3.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>src;src\wrappers;tools\msvs\genfiles;deps\uv\src\ares;$(OutDir)obj\global_intermediate;deps\openssl\openssl\include;deps\v8\include;deps\sqlite;.;deps\zlib;deps\http_parser;deps\cares\include;deps\uv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;NODE_WANT_INTERNALS=1;ARCH="ia32";PLATFORM="win";HAVE_OPENSSL=1;JS_ENGINE_V8=1;V8_IS_3_14=1;HAVE_PERFCTR=1;JXCORE_EMBEDS_SQLITE;FD_SETSIZE=1024;PLATFORM="win32";_UNICODE=1;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="jx.gyp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\platform\win\node_win32_perfctr_provider.h" />
+    <ClInclude Include="src\node_counters.h" />
+    <ClInclude Include="deps\v8\include\v8.h" />
+    <ClInclude Include="deps\v8\include\v8-debug.h" />
+    <ClInclude Include="deps\sqlite\sqlite3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\jx\Proxy\EngineLogger.cc" />
+    <ClCompile Include="src\jx\extend.cc" />
+    <ClCompile Include="src\jx\commons.cc" />
+    <ClCompile Include="src\jx\job.cc" />
+    <ClCompile Include="src\jx\jx_instance.cc" />
+    <ClCompile Include="src\jx\job_store.cc" />
+    <ClCompile Include="src\jx\memory_store.cc" />
+    <ClCompile Include="src\jx\jxp_compress.cc" />
+    <ClCompile Include="src\jx\error_definition.cc" />
+    <ClCompile Include="src\wrappers\handle_wrap.cc" />
+    <ClCompile Include="src\wrappers\thread_wrap.cc" />
+    <ClCompile Include="src\wrappers\memory_wrap.cc" />
+    <ClCompile Include="src\wrappers\jxtimers_wrap.cc" />
+    <ClCompile Include="src\wrappers\timer_wrap.cc" />
+    <ClCompile Include="src\wrappers\node_os.cc" />
+    <ClCompile Include="src\wrappers\cares_wrap.cc" />
+    <ClCompile Include="src\wrappers\fs_event_wrap.cc" />
+    <ClCompile Include="src\wrappers\node_buffer.cc" />
+    <ClCompile Include="src\wrappers\tcp_wrap.cc" />
+    <ClCompile Include="src\wrappers\udp_wrap.cc" />
+    <ClCompile Include="src\wrappers\jxutils_wrap.cc" />
+    <ClCompile Include="src\wrappers\crypto_extension.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\wrappers\process_wrap.cc" />
+    <ClCompile Include="src\wrappers\signal_wrap.cc" />
+    <ClCompile Include="src\wrappers\node_file.cc" />
+    <ClCompile Include="src\wrappers\stream_wrap.cc" />
+    <ClCompile Include="src\wrappers\tty_wrap.cc" />
+    <ClCompile Include="src\wrappers\pipe_wrap.cc" />
+    <ClCompile Include="src\wrappers\node_http_parser.cc" />
+    <ClCompile Include="src\wrappers\node_zlib.cc" />
+    <ClCompile Include="src\external\module_wrap.cc" />
+    <ClCompile Include="src\node_constants.cc" />
+    <ClCompile Include="src\node_extensions.cc" />
+    <ClCompile Include="src\node_javascript.cc" />
+    <ClCompile Include="src\public\jx_result.cc" />
+    <ClCompile Include="src\public\jx.cc" />
+    <ClCompile Include="src\jxcore.cc" />
+    <ClCompile Include="src\node.cc" />
+    <ClCompile Include="src\node_script.cc" />
+    <ClCompile Include="src\string_bytes.cc" />
+    <ClCompile Include="src\slab_allocator.cc" />
+    <ClCompile Include="src\node_stat_watcher.cc" />
+    <ClCompile Include="src\node_main.cc" />
+    <ClCompile Include="src\wrappers\node_crypto.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\jx\Proxy\V8_3_14\JXString.cc" />
+    <ClCompile Include="src\jx\Proxy\V8_3_14\v8_typed_array.cc" />
+    <ClCompile Include="src\platform\win\node_win32_perfctr_provider.cc" />
+    <ClCompile Include="src\node_counters.cc" />
+    <ClCompile Include="src\external\sqlite3\database.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\external\sqlite3\statement.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\external\sqlite3\node_sqlite3.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tools\msvs\genfiles\node_perfctr_provider.rc" />
+    <ResourceCompile Include="src\res\node.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="node_js2c.vcxproj">
+      <Project>{4DCBA3DB-4989-EAB7-0252-907D0C8A5A33}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="node_perfctr.vcxproj">
+      <Project>{E0426E6D-33CD-5201-39EF-B614814AC019}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\v8\tools\gyp\v8.vcxproj">
+      <Project>{5F03D104-10BB-B3BA-7021-6A64E7AA221F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\zlib\zlib.vcxproj">
+      <Project>{7FF6F247-3828-69AF-7EDB-FB0A9FF393E1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\http_parser\http_parser.vcxproj">
+      <Project>{3D75A4D7-C52C-EA52-8959-BDF659A0ED66}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\cares\cares.vcxproj">
+      <Project>{74CF319D-6651-E4ED-35FD-B82D47DC2516}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\uv\libuv.vcxproj">
+      <Project>{603C6853-166F-A229-0CE7-B001CAF96C76}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\v8\tools\gyp\v8_base.vcxproj">
+      <Project>{49E7EEAF-9054-48C6-88AE-03D0F4968B76}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\v8\tools\gyp\v8_snapshot.vcxproj">
+      <Project>{A9E66316-6483-BD43-8FC3-020655427237}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\v8\tools\gyp\js2c.vcxproj">
+      <Project>{B5211BC6-68D3-792F-117F-B0C5D46CCBEE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

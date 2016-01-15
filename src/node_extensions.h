@@ -26,7 +26,8 @@ NODE_EXT_LIST_ITEM(node_tty_wrap)
 NODE_EXT_LIST_ITEM(node_process_wrap)
 NODE_EXT_LIST_ITEM(node_fs_event_wrap)
 NODE_EXT_LIST_ITEM(node_signal_wrap)
-
+#if HAVE_OPENSSL
 NODE_EXT_LIST_ITEM(node_crypto_extension_wrap)
+#endif
 
 NODE_EXT_LIST_END

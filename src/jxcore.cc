@@ -228,12 +228,14 @@ void JXEngine::ParseArgs(int argc, char **argv) {
       } else if (strcmp(arg, "--help") == 0 || strcmp(arg, "-h") == 0) {
         PrintHelp();
         exit(0);
+#if HAVE_OPENSSL
       } else if (strcmp(arg, "--enable-ssl2") == 0) {
         node::SSL2_ENABLE = true;
         argv[i] = const_cast<char *>("");
       } else if (strcmp(arg, "--enable-ssl3") == 0) {
         node::SSL3_ENABLE = true;
         argv[i] = const_cast<char *>("");
+#endif
       } else if (strcmp(arg, "--eval") == 0 || strcmp(arg, "-e") == 0 ||
                  strcmp(arg, "--print") == 0 || strcmp(arg, "-pe") == 0 ||
                  strcmp(arg, "-p") == 0) {
