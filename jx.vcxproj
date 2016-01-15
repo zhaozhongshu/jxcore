@@ -81,7 +81,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <OmitFramePointers>true</OmitFramePointers>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;NODE_WANT_INTERNALS=1;ARCH="ia32";PLATFORM="win";HAVE_OPENSSL=0;JS_ENGINE_V8=1;V8_IS_3_14=1;HAVE_PERFCTR=0;FD_SETSIZE=1024;PLATFORM="win32";_UNICODE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;NODE_WANT_INTERNALS=1;ARCH="ia32";PLATFORM="win";HAVE_OPENSSL=1;JS_ENGINE_V8=1;V8_IS_3_14=1;HAVE_PERFCTR=0;FD_SETSIZE=1024;PLATFORM="win32";_UNICODE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
@@ -105,7 +105,8 @@
       <SubSystem>Console</SubSystem>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <IgnoreSpecificDefaultLibraries>openssl.lib;sqlite3.lib</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
     </Link>
     <ResourceCompile>
       <AdditionalIncludeDirectories>src;src\wrappers;tools\msvs\genfiles;deps\uv\src\ares;$(OutDir)obj\global_intermediate;deps\openssl\openssl\include;deps\v8\include;deps\sqlite;.;deps\zlib;deps\http_parser;deps\cares\include;deps\uv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -145,7 +146,7 @@
     <ClCompile Include="src\wrappers\udp_wrap.cc" />
     <ClCompile Include="src\wrappers\jxutils_wrap.cc" />
     <ClCompile Include="src\wrappers\crypto_extension.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="src\wrappers\process_wrap.cc" />
     <ClCompile Include="src\wrappers\signal_wrap.cc" />
@@ -169,20 +170,20 @@
     <ClCompile Include="src\node_stat_watcher.cc" />
     <ClCompile Include="src\node_main.cc" />
     <ClCompile Include="src\wrappers\node_crypto.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="src\jx\Proxy\V8_3_14\JXString.cc" />
     <ClCompile Include="src\jx\Proxy\V8_3_14\v8_typed_array.cc" />
     <ClCompile Include="src\platform\win\node_win32_perfctr_provider.cc" />
     <ClCompile Include="src\node_counters.cc" />
     <ClCompile Include="src\external\sqlite3\database.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="src\external\sqlite3\statement.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="src\external\sqlite3\node_sqlite3.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +191,12 @@
     <ResourceCompile Include="src\res\node.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="deps\openssl\openssl.vcxproj">
+      <Project>{5c6460db-f7b1-5315-a0de-79a9dfc525a1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="deps\sqlite\sqlite.vcxproj">
+      <Project>{17a852b2-b6f1-1157-7f55-5eade195d289}</Project>
+    </ProjectReference>
     <ProjectReference Include="node_js2c.vcxproj">
       <Project>{4DCBA3DB-4989-EAB7-0252-907D0C8A5A33}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
