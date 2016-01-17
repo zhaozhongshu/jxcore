@@ -1020,6 +1020,51 @@
     var stdin, stdout, stderr;
 
     var util = NativeModule.require('util');
+
+    // fake stdout,stderr
+    if( process.subsystem === 'windows' ){
+      
+      var Writable = NativeModule.require('stream').Writable;
+      $win = process.binding('windows_wrap');
+      
+      util.inherits(StdoutToMem, Writable);
+
+      function StdoutToMem(opt) {
+        Writable.call(this, opt);
+      }
+
+      var fake_stdout = null, fake_stderr = null;
+
+      fake_stdout = new StdoutToMem();
+      fake_stdout.write = fake_stdout._write = function(bf) {
+        $win.print(bf + '');
+      };
+
+      fake_stderr = new StdoutToMem();
+      fake_stderr.write = fake_stderr._write = function(bf) {
+        $win.print_err_warn(bf + '', true);
+      };
+
+      process.__defineGetter__('stdout', function() {
+        return fake_stdout;
+      });
+
+      process.__defineGetter__('stderr', function() {
+        return fake_stderr;
+      });
+
+      process.__defineGetter__('stdin', function() {
+        console.error('stdin is not supported');
+      });
+
+      process.openStdin = function() {
+        process.stdin.resume();
+        return process.stdin;
+      };
+      return;
+    }
+    // 
+
     var isAndroid = process.platform === 'android' && process.isEmbedded;
     var $tw;
     if (isAndroid) {

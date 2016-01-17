@@ -61,14 +61,24 @@ typedef void (*JS_FINALIZER_METHOD)(JS_HANDLE_VALUE_REF val, void* data);
 #define warn_console(...) \
   __android_log_print(ANDROID_LOG_WARN, JXCORE_ALOG_TAG, __VA_ARGS__)
 #else
-#define log_console(...) fprintf(stdout, __VA_ARGS__)
-#define flush_console(...)        \
-  do {                            \
-    fprintf(stdout, __VA_ARGS__); \
-    fflush(stdout);               \
-  } while (0)
-#define error_console(...) fprintf(stderr, __VA_ARGS__)
-#define warn_console(...) fprintf(stderr, __VA_ARGS__)
+
+#ifdef SUBSYSTEM_WIN
+	extern void log_console(const char* fmt, ...);
+
+	#define flush_console log_console
+	#define error_console log_console
+	#define warn_console  error_console
+#else
+	#define log_console(...) fprintf(stdout, __VA_ARGS__)
+	#define flush_console(...)        \
+		  do {                            \
+			fprintf(stdout, __VA_ARGS__); \
+			fflush(stdout);               \
+	  	  				} while (0)
+	#define error_console(...) fprintf(stderr, __VA_ARGS__)
+	#define warn_console(...) fprintf(stderr, __VA_ARGS__)
+#endif
+
 #endif
 
 #elif defined(JS_ENGINE_MOZJS)

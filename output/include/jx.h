@@ -102,6 +102,14 @@ JX_GetStoredValueType(const int threadId, const long id);
 JXCORE_EXTERN(JXValue *)
 JX_RemoveStoredValue(const int threadId, const long identifier);
 
+typedef void(*JX_PRINT_CALLBACK)(const char* buffer);
+
+JXCORE_EXTERN(void)
+JX_AddPrintListener(JX_PRINT_CALLBACK callback);
+
+JXCORE_EXTERN(void)
+JX_RemovePrintListener(JX_PRINT_CALLBACK callback);
+
 #ifdef __cplusplus
 }
 #endif

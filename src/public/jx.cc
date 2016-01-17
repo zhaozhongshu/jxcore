@@ -375,3 +375,64 @@ JX_RemoveStoredValue(const int threadId, const long id) {
   // for compiler's sake
   return 0;
 }
+
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+static vector<JX_PRINT_CALLBACK> printCallbacks;
+
+JXCORE_EXTERN(void) 
+JX_AddPrintListener(JX_PRINT_CALLBACK callback)
+{
+	if (find(printCallbacks.begin(), printCallbacks.end(), callback) != printCallbacks.end())
+	{
+		return;
+	}
+	else
+	{
+		printCallbacks.push_back(callback);
+	}
+}
+
+JXCORE_EXTERN(void) 
+JX_RemovePrintListener(JX_PRINT_CALLBACK callback)
+{
+	vector<JX_PRINT_CALLBACK>::iterator it;
+	it = find(printCallbacks.begin(), printCallbacks.end(), callback);
+	if (it != printCallbacks.end())
+	{
+		printCallbacks.erase(it);
+	}
+}
+
+void log_console(const char* fmt, ...)
+{
+	va_list args;
+	va_start(args, fmt);
+
+	size_t needed = vsnprintf(NULL, 0, fmt, args);
+
+	char  *buffer = NULL;
+	__try
+	{
+		buffer = (char*)_alloca(needed + 1);
+	}
+	__except (GetExceptionCode() == STATUS_STACK_OVERFLOW)
+	{
+		_resetstkoflw();
+		return;
+	};
+
+	vsnprintf(buffer, needed, fmt, args);
+	buffer[needed] = '\0';
+
+	vector<JX_PRINT_CALLBACK>::iterator it;
+	for (it = printCallbacks.begin(); it != printCallbacks.end(); it++)
+	{
+		JX_PRINT_CALLBACK callback = *it;
+		callback(buffer);
+	}
+	printf(buffer);
+	va_end(args);
+}

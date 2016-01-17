@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="src">
@@ -528,6 +528,14 @@
     <ResourceCompile Include="src\res\node.rc">
       <Filter>src\res</Filter>
     </ResourceCompile>
-    <None Include="jx.gyp"/>
+    <None Include="jx.gyp" />
+    <ClCompile Include="src\wrappers\windows_wrap.cc">
+      <Filter>src\wrappers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\wrappers\windows_wrap.h">
+      <Filter>src\wrappers</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

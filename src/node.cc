@@ -1999,6 +1999,9 @@ void SetupProcessObject(const int threadId) {
   // process.platform
   JS_NAME_SET(process, JS_STRING_ID("platform"), STD_TO_STRING(PLATFORM));
 
+  //subsystem
+  JS_NAME_SET(process, JS_STRING_ID("subsystem"), STD_TO_STRING("windows"));
+
   jxcore::JXEngine* active_engine = jxcore::JXEngine::ActiveInstance();
   if (active_engine == NULL && threadId > 0) {
     active_engine = jxcore::JXEngine::GetInstanceByThreadId(0);

@@ -84,3 +84,119 @@ Would you like to be one of them? Fork, Hack, and send a Pull Request.
 List of Node.JS contributors can be found from [here](https://github.com/jxcore/jxcore/blob/master/node/AUTHORS)
 
 ** compatibility mode
+
+
+# 解决jxcore嵌入到win32 GUI程序中的一些问题 #
+
+**process.stdout**和**console.log**这些函数直接输出到stdout上，GUI程序中不存在，所以需要重定向打日志函数
+
+- 重定向jxcore的标准输出函数
+```C++
+extern void log_console(const char* fmt, ...);
+
+\#define flush_console log_console
+\#define error_console log_console
+\#define warn_console  error_console
+```
+- 导出标准输出订阅函数
+```C++
+typedef void(*JX_PRINT_CALLBACK)(const char* buffer);
+
+JXCORE_EXTERN(void)
+JX_AddPrintListener(JX_PRINT_CALLBACK callback);
+
+JXCORE_EXTERN(void)
+JX_RemovePrintListener(JX_PRINT_CALLBACK callback);
+```
+用来订阅log_console的输出
+
+- process.stdout重定向
+先定义process.subsystem
+```C++
+//subsystem
+JS_NAME_SET(process, JS_STRING_ID("subsystem"), STD_TO_STRING("windows"));
+```
+在定义一个windows_wrap对象
+```C++
+JS_METHOD(WindowsWrap, PrintLog) {
+  if (!args.IsString(0)) {
+    THROW_EXCEPTION("Missing parameters (print) expects (string).");
+  }
+
+  jxcore::JXString str_key;
+  args.GetString(0, &str_key);
+  log_console("%s\n", *str_key);
+}
+JS_METHOD_END
+
+JS_METHOD(WindowsWrap, PrintError) {
+  if (!args.IsString(0)) {
+    THROW_EXCEPTION("Missing parameters (print_err) expects (string).");
+  }
+
+  jxcore::JXString str_key;
+  args.GetString(0, &str_key);
+  if (args.GetBoolean(1))
+    error_console("%s\n", *str_key);
+  else
+    warn_console("%s\n", *str_key);
+}
+JS_METHOD_END
+
+}  // namespace node
+
+NODE_MODULE(node_windows_wrap, node::WindowsWrap::Initialize)
+```
+在node_extensions.h末尾添加引用，使其启动时自动加载
+```C++
+NODE_EXT_LIST_ITEM(node_windows_wrap)
+```
+
+修改node.js启动脚本,增加如下内容
+```javascript
+// fake stdout,stderr
+if( process.subsystem === 'windows' ){
+  
+  var Writable = NativeModule.require('stream').Writable;
+  $win = process.binding('windows_wrap');
+  
+  util.inherits(StdoutToMem, Writable);
+
+  function StdoutToMem(opt) {
+    Writable.call(this, opt);
+  }
+
+  var fake_stdout = null, fake_stderr = null;
+
+  fake_stdout = new StdoutToMem();
+  fake_stdout.write = fake_stdout._write = function(bf) {
+    $win.print(bf + '');
+  };
+
+  fake_stderr = new StdoutToMem();
+  fake_stderr.write = fake_stderr._write = function(bf) {
+    $win.print_err_warn(bf + '', true);
+  };
+
+  process.__defineGetter__('stdout', function() {
+    return fake_stdout;
+  });
+
+  process.__defineGetter__('stderr', function() {
+    return fake_stderr;
+  });
+
+  process.__defineGetter__('stdin', function() {
+    console.error('stdin is not supported');
+  });
+
+  process.openStdin = function() {
+    process.stdin.resume();
+    return process.stdin;
+  };
+  return;
+}
+// 
+```
+
+

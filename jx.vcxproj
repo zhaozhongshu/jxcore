@@ -76,12 +76,12 @@
       <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4351;4355;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4351;4355;4800;4099;4530;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ExceptionHandling>false</ExceptionHandling>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <OmitFramePointers>true</OmitFramePointers>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;NODE_WANT_INTERNALS=1;ARCH="ia32";PLATFORM="win";HAVE_OPENSSL=1;JS_ENGINE_V8=1;V8_IS_3_14=1;HAVE_PERFCTR=0;FD_SETSIZE=1024;PLATFORM="win32";_UNICODE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;NODE_WANT_INTERNALS=1;ARCH="ia32";PLATFORM="win";HAVE_OPENSSL=1;JS_ENGINE_V8=1;V8_IS_3_14=1;HAVE_PERFCTR=0;FD_SETSIZE=1024;PLATFORM="win32";_UNICODE=1;SUBSYSTEM_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
@@ -100,13 +100,15 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <OptimizeReferences>true</OptimizeReferences>
-      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <OutputFile>$(SolutionDir)output\bin\$(ProjectName)$(TargetExt)</OutputFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(SolutionDir)output\bin\$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(SolutionDir)output\lib\$(TargetName).lib</ImportLibrary>
     </Link>
     <ResourceCompile>
       <AdditionalIncludeDirectories>src;src\wrappers;tools\msvs\genfiles;deps\uv\src\ares;$(OutDir)obj\global_intermediate;deps\openssl\openssl\include;deps\v8\include;deps\sqlite;.;deps\zlib;deps\http_parser;deps\cares\include;deps\uv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -122,6 +124,7 @@
     <ClInclude Include="deps\v8\include\v8.h" />
     <ClInclude Include="deps\v8\include\v8-debug.h" />
     <ClInclude Include="deps\sqlite\sqlite3.h" />
+    <ClInclude Include="src\wrappers\windows_wrap.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\jx\Proxy\EngineLogger.cc" />
@@ -185,6 +188,7 @@
     <ClCompile Include="src\external\sqlite3\node_sqlite3.cc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="src\wrappers\windows_wrap.cc" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="tools\msvs\genfiles\node_perfctr_provider.rc" />
