@@ -9,11 +9,9 @@
 *.pdb
 *.pyc
 *.scons*
-*.sln
 *.so
 *.suo
 *.user
-*.vcproj
 *.xcodeproj
 #*#
 *~

@@ -26,10 +26,6 @@ vgcore.*
 /run-benchmarks.exe
 /run-benchmarks.dSYM
 
-*.sln
-*.vcproj
-*.vcxproj
-*.vcxproj.filters
 *.vcxproj.user
 _UpgradeReport_Files/
 UpgradeLog*.XML
